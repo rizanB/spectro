@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Spectroscopy Data App',
+      title: 'Spectro app',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

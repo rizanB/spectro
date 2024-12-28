@@ -10,7 +10,7 @@ import 'package:permission_handler/permission_handler.dart';
 
 
 class NewExperimentScreen extends StatelessWidget {
-  const NewExperimentScreen({Key? key}) : super(key: key);
+  const NewExperimentScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class NewExperimentScreen extends StatelessWidget {
 }
 
 class CalibrationHomePage extends StatefulWidget {
-  const CalibrationHomePage({Key? key}) : super(key: key);
+  const CalibrationHomePage({super.key});
 
   @override
   _CalibrationHomePageState createState() => _CalibrationHomePageState();
@@ -66,7 +66,6 @@ class _CalibrationHomePageState extends State<CalibrationHomePage> {
   void saveExperiment() async {
     if (observations.length >= 3) {
       final experimentName = experimentNameController.text.trim();
-      final date = DateTime.now();
 
       if (experimentName.isEmpty) {
         _promptUserForExperimentName();

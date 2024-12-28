@@ -5,6 +5,17 @@ class HelpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Column(
+        children: [
+          Text('Spectrometry & it\'s principle'),
+          Text('Types of spectrometry'),
+          Text('What it means'),
+          Text('How to use this app'),
+          Text('FAQ')
+        ],
+      ),
+    );
   }
 }
